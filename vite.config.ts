@@ -1,4 +1,5 @@
 import reactRefresh from '@vitejs/plugin-react-refresh'
+import Checker from 'vite-plugin-checker'
 import { resolve } from 'path'
 
 function pathResolve(dir: string) {
@@ -11,18 +12,22 @@ export default ({ command }: { command: string }) => {
   return {
     resolve: {
       alias: [
-        // {
-        //   // /@/xxxx  =>  src/xxx
-        //   find: /^~/,
-        //   replacement: pathResolve('node_modules') + '/',
-        // },
         {
-          // /@/xxxx  =>  src/xxx
           find: /@\//,
           replacement: pathResolve('src') + '/',
         },
       ],
     },
-    plugins: [reactRefresh()],
+    plugins: [
+      reactRefresh(),
+      Checker({
+        typescript: true,
+        overlay: true,
+        eslint: {
+          files: 'src',
+          extensions: ['.ts', '.tsx'],
+        },
+      }),
+    ],
   }
 }

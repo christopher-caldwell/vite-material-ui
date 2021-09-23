@@ -11,20 +11,20 @@ const DarkModeToggle: FC = () => {
   return (
     <Root>
       <Checkbox
-        type="checkbox"
-        id="dark-mode-toggle"
+        type='checkbox'
+        id='dark-mode-toggle'
         checked={theme === 'dark'}
         onChange={({ target: { checked } }) => {
           const themeToSet = checked ? 'dark' : 'light'
           setTheme(themeToSet)
         }}
       />
-      <Label htmlFor="dark-mode-toggle">
+      <Label htmlFor='dark-mode-toggle'>
         <MoonIcon>
-          <DarkModeIcon color="inherit" fontSize="small" />
+          <DarkModeIcon color='inherit' fontSize='small' />
         </MoonIcon>
         <SunIcon>
-          <LightModeIcon color="inherit" fontSize="small" />
+          <LightModeIcon color='inherit' fontSize='small' />
         </SunIcon>
         <Ball isChecked={theme === 'dark'} />
       </Label>
@@ -41,7 +41,7 @@ interface BallProps {
   isChecked: boolean
 }
 const Ball = styled('div', {
-  shouldForwardProp: isPropValid,
+  shouldForwardProp: isPropValid
 })<BallProps>`
   background-color: #fff;
   border-radius: 50%;

@@ -1,9 +1,6 @@
 import React, { FC, useContext, useMemo } from 'react'
 import CssBaseline from '@mui/material/CssBaseline'
-import {
-  ThemeProvider as MuiThemeProvider,
-  createTheme,
-} from '@mui/material/styles'
+import { ThemeProvider as MuiThemeProvider, createTheme } from '@mui/material/styles'
 
 import { ChosenTheme } from './ChosenTheme'
 
@@ -27,17 +24,17 @@ const createThemeHelper = (theme: 'dark' | 'light') => {
       mode: theme,
       background: {
         default: isDark ? '#303030;' : '#f0f0f0',
-        paper: isDark ? '#242526' : '#fffff',
+        paper: isDark ? '#242526' : '#fffff'
       },
       primary: {
-        main: brandColor,
+        main: brandColor
       },
       error: {
-        main: 'rgb(232, 51, 51)',
+        main: 'rgb(232, 51, 51)'
       },
       success: {
-        main: 'rgb(76,175,80)',
-      },
-    },
+        main: 'rgb(76,175,80)'
+      }
+    }
   })
 }
