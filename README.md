@@ -7,6 +7,8 @@ A Vite template for React, TypeScript and the latest major version of MUI.
 - React w/ TypeScript
 - Takes 8-10 seconds to build prod bundle at 198kb
 - v5 ( latest ) version of Material UI, `@mui/material`
+- Dark mode toggle
+- Aliased imports
 
 ## Demo
 
@@ -22,4 +24,8 @@ A Vite template for React, TypeScript and the latest major version of MUI.
 
 To learn more about the newest ways to use MUI, checkout [the docs](https://mui.com/getting-started/usage/).
 
-Custom theming is demonstrated, as well as how to use that theme in other elements.
+### What's Included
+
+- Custom theming
+- Using that theme from within a `styled` component. 
+- Dark mode toggle with React Context
