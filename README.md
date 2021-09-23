@@ -16,7 +16,7 @@ A Vite template for React, TypeScript and the latest major version of MUI.
 
 ## Getting Started
 
-- Clone the repo, `git clone https://github.com/christopher-caldwell/vite-material-ui.git`
+- Clone the repo, `git clone https://github.com/christopher-caldwell/vite-material-ui.git`, or use the "Use this template" button at the top of this page.
 - Install dependencies using `yarn`
 - Start the server with `yarn dev`
 
@@ -27,5 +27,5 @@ To learn more about the newest ways to use MUI, checkout [the docs](https://mui.
 ### What's Included
 
 - Custom theming
-- Using that theme from within a `styled` component. 
+- Using that theme from within a `styled` component.
 - Dark mode toggle with React Context
