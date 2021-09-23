@@ -5,8 +5,8 @@ import DarkModeToggle from './DarkModeToggle'
 
 const Header: FC = () => {
   return (
-    <AppBar position="fixed">
-      <Toolbar variant="dense">
+    <AppBar position='fixed'>
+      <Toolbar variant='dense'>
         <DarkModeToggle />
       </Toolbar>
     </AppBar>
