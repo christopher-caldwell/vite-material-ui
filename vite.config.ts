@@ -1,4 +1,4 @@
-import reactRefresh from '@vitejs/plugin-react-refresh'
+import react from '@vitejs/plugin-react'
 import Checker from 'vite-plugin-checker'
 import { resolve } from 'path'
 
@@ -17,7 +17,31 @@ const config = () => ({
     ]
   },
   plugins: [
-    reactRefresh(),
+    react({
+      babel: {
+        plugins: [
+          [
+            '@emotion',
+            {
+              importMap: {
+                '@mui/material': {
+                  styled: {
+                    canonicalImport: ['@emotion/styled', 'default'],
+                    styledBaseImport: ['@mui/material', 'styled']
+                  }
+                },
+                '@mui/material/styles': {
+                  styled: {
+                    canonicalImport: ['@emotion/styled', 'default'],
+                    styledBaseImport: ['@mui/material/styles', 'styled']
+                  }
+                }
+              }
+            }
+          ]
+        ]
+      }
+    }),
     Checker({
       typescript: true,
       overlay: true,
