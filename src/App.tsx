@@ -27,7 +27,7 @@ const Root = styled('div')`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+
   & a {
     text-decoration: none;
     color: ${({ theme: { palette } }) => palette.primary.main};
