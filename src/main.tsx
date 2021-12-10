@@ -1,16 +1,16 @@
-import React from 'react'
+import { StrictMode } from 'react'
 import ReactDOM from 'react-dom'
 
 import { ChosenThemeProvider, ThemeProvider } from '@/providers'
 import App from './App'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <ChosenThemeProvider>
       <ThemeProvider>
         <App />
       </ThemeProvider>
     </ChosenThemeProvider>
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root')
 )
