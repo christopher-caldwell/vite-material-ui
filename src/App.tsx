@@ -1,9 +1,9 @@
-import React from 'react'
+import { FC } from 'react'
 import { Link, Slider, styled } from '@mui/material'
 
 import Header from '@/header'
 
-const App: React.FC = () => {
+const App: FC = () => {
   return (
     <Root>
       <Header />

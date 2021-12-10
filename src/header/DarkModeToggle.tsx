@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react'
+import { FC, useContext } from 'react'
 import DarkModeIcon from '@mui/icons-material/Brightness3'
 import LightModeIcon from '@mui/icons-material/WbSunny'
 import { styled } from '@mui/material'

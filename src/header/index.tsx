@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { AppBar, Toolbar } from '@mui/material'
 
 import DarkModeToggle from './DarkModeToggle'
