@@ -28,5 +28,8 @@ To learn more about the newest ways to use MUI, checkout [the docs](https://mui.
 ### What's Included
 
 - Custom theming
-- Using that theme from within a `styled` component.
+- Using that theme from within a `styled` component
 - Dark mode toggle with React Context
+- Aliased imports with `@/` mapping to the `src/`
+- Rollup bundle analyzer
+  - To use, run `yarn analyze`
