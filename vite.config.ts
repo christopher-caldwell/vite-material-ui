@@ -26,31 +26,7 @@ const config: UserConfig = {
     sourcemap: !!shouldAnalyze
   },
   plugins: [
-    react({
-      babel: {
-        plugins: [
-          [
-            '@emotion',
-            {
-              importMap: {
-                '@mui/material': {
-                  styled: {
-                    canonicalImport: ['@emotion/styled', 'default'],
-                    styledBaseImport: ['@mui/material', 'styled']
-                  }
-                },
-                '@mui/material/styles': {
-                  styled: {
-                    canonicalImport: ['@emotion/styled', 'default'],
-                    styledBaseImport: ['@mui/material/styles', 'styled']
-                  }
-                }
-              }
-            }
-          ]
-        ]
-      }
-    }),
+    react(),
     Checker({
       typescript: true,
       overlay: true,
